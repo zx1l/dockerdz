@@ -1,4 +1,4 @@
-ADD alpine-minirootfs-3.21.3-x86_64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.21.3-x86_64.tar.gz 
 
 CMD ["/bin/sh"]
 
@@ -20,6 +20,6 @@ ENV PORT=80
 
 RUN /bin/sh -c npm install
 
-COPY /usr/src/app/build /usr/src/html # buildkit
+COPY /usr/src/app/build /usr/src/html 
 
 CMD ["/bin/sh" "-c" "serve -l" "80"]
