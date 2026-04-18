@@ -1,5 +1,5 @@
 name: Deploy to Render
-uses: JorgeLNJunior/render-deploy@v1.5.0
+
 
 jobs:
   deploy:
